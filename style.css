@@ -850,10 +850,7 @@ a {
 .dealer-h2 span{color:#fbbf24}
 .dealer-p{color:rgba(255,255,255,.8);line-height:1.7;margin-bottom:32px}
 .dealer-map{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:var(--radius);aspect-ratio:4/3;position:relative;overflow:hidden}
-.dealer-map::before{content:'KERALA';position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:'Outfit',sans-serif;font-size:3.5rem;font-weight:900;color:rgba(255,255,255,.07);letter-spacing:.2em}
-.map-pin{position:absolute;font-size:1.4rem;animation:pinBounce 2.5s ease-in-out infinite}
-.p1{top:28%;left:38%;animation-delay:0s}.p2{top:42%;left:56%;animation-delay:.4s}.p3{top:60%;left:44%;animation-delay:.8s}.p4{top:72%;left:28%;animation-delay:.2s}
-.map-tag{position:absolute;bottom:14px;left:50%;transform:translateX(-50%);background:rgba(255,255,255,.2);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.3);padding:5px 14px;border-radius:20px;font-size:.7rem;font-weight:700;color:#fff;letter-spacing:.12em;text-transform:uppercase}
+.dealer-map iframe{width:100%;height:100%;border:0;display:block;filter:saturate(1.05) contrast(1.02)}
 
 /* CONTACT */
 .contact{padding:96px 0;background:#fff}
