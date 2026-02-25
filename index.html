@@ -13,15 +13,16 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@700;800;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/konva@9/konva.min.js"></script>
 </head>
 
 <body>
 
     <!-- ANNOUNCEMENT BAR -->
-    <!-- <div class="bar">
+    <div class="bar">
         <span>🎉 Limited Time: Get ₹2,000 off on 43" Smart TV + Free Installation!</span>
         <a href="#contact">Claim Now →</a>
-    </div> -->
+    </div>
 
     <!-- NAVBAR -->
     <nav class="navbar" id="navbar">
@@ -51,6 +52,8 @@
 
     <!-- HERO -->
     <section class="hero" id="home">
+        <!-- Konva particle canvas -->
+        <div id="hero-canvas" style="position:absolute;inset:0;pointer-events:none;z-index:0;overflow:hidden"></div>
         <div class="container">
             <div class="hero-wrap">
                 <div class="hero-text">
@@ -265,9 +268,12 @@
         </div>
     </section>
 
-    <!-- TECHNOLOGY -->
-    <section class="tech-section" id="tech">
-        <div class="tech-wrap">
+    <section class="tech-section" id="tech" style="position:relative">
+        <div class="tech-wrap" style="position:relative">
+            <!-- Konva rings canvas -->
+            <div id="tech-canvas"
+                style="position:absolute;top:0;right:0;width:50%;height:100%;pointer-events:none;z-index:1;overflow:hidden">
+            </div>
             <div class="container">
                 <div class="tech-grid">
                     <div class="tech-left anim-left">
@@ -405,17 +411,8 @@
                         <a href="#products" class="btn btn-white">Shop Smart TVs</a>
                     </div>
                     <div class="sound-right anim-right">
-                        <div class="viz">
-                            <div class="vbar v1"></div>
-                            <div class="vbar v2"></div>
-                            <div class="vbar v3"></div>
-                            <div class="vbar v4"></div>
-                            <div class="vbar v5"></div>
-                            <div class="vbar v6"></div>
-                            <div class="vbar v7"></div>
-                            <div class="vbar v8"></div>
-                            <div class="vbar v9"></div>
-                        </div>
+                        <!-- Konva waveform canvas -->
+                        <div id="sound-canvas" style="width:100%;height:140px;margin-bottom:28px"></div>
                         <div class="dolby-box">
                             <span class="dolby-word">DOLBY</span>
                             <span class="dolby-sub">Audio</span>
@@ -897,6 +894,7 @@
     </footer>
 
     <script src="main.js"></script>
+    <script src="konva-effects.js"></script>
 </body>
 
 </html>
