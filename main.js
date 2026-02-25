@@ -62,6 +62,7 @@ function initAnimations() {
     ['.size-card', 'anim-scale'],
     ['.product-card', 'anim-up'],
     ['.testi-card', 'anim-up'],
+    ['.about-card', 'anim-up'],
     ['.process-step', 'anim-up'],
     ['.promise-card', 'anim-scale'],
     ['.sector', 'anim-scale'],
