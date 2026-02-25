@@ -1034,7 +1034,20 @@ a {
 .ci-body a,.ci-body span{font-size:.9rem;color:var(--dark);font-weight:500}
 .ci-body a:hover{color:var(--red)}
 .social-row{display:flex;gap:8px;flex-wrap:wrap}
-.social-btn{background:var(--red-soft);border:1px solid rgba(230,57,70,.18);color:var(--red);padding:8px 16px;border-radius:8px;font-size:.78rem;font-weight:700;transition:var(--t)}
+.social-btn{
+  background:var(--red-soft);
+  border:1px solid rgba(230,57,70,.18);
+  color:var(--red);
+  padding:8px 14px;
+  border-radius:8px;
+  font-size:.78rem;
+  font-weight:700;
+  transition:var(--t);
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+}
+.social-btn svg{width:16px;height:16px;flex-shrink:0}
 .social-btn:hover{background:var(--red);color:#fff}
 .form-card{background:#fff;border:1.5px solid var(--card-border);border-radius:var(--radius);padding:36px;box-shadow:0 4px 40px rgba(0,0,0,.07)}
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
@@ -1057,6 +1070,7 @@ a {
 .foot-tagline{font-size:.82rem;color:rgba(255,255,255,.4);line-height:1.6;margin-bottom:20px}
 .foot-social{display:flex;gap:8px}
 .fs-btn{width:34px;height:34px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:7px;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.45);font-size:.82rem;transition:var(--t)}
+.fs-btn svg{width:16px;height:16px}
 .fs-btn:hover{background:var(--red);border-color:var(--red);color:#fff}
 .foot-col h5{font-size:.72rem;font-weight:800;color:rgba(255,255,255,.85);text-transform:uppercase;letter-spacing:.14em;margin-bottom:16px}
 .foot-col ul{list-style:none;display:flex;flex-direction:column;gap:9px}
